@@ -1,18 +1,8 @@
 {
+  "installCommand": "npm install --legacy-peer-deps",
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "env": {
-    "NEXT_PUBLIC_WC_PROJECT_ID": "@next_public_wc_project_id",
-    "NEXT_PUBLIC_API_URL": "@next_public_api_url",
-    "NEXT_PUBLIC_RPC_URL": "@next_public_rpc_url",
-    "NEXT_PUBLIC_CHAIN_ID": "@next_public_chain_id"
-  },
   "build": {
     "env": {
       "NEXT_TELEMETRY_DISABLED": "1"
